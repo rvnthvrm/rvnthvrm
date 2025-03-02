@@ -3,72 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>American Alliances Tech</title>
+    <title>American Alliances Tech | Technology Solutions Partner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <h1>American Alliances Tech</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#clients">Our Clients</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="American Alliances Tech Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h2>Innovative Solutions for a Connected World</h2>
-            <p>Empowering businesses with cutting-edge technology and unparalleled service.</p>
+            <h1>Empowering Innovation, Delivering Excellence</h1>
+            <p>Your trusted partner in technology solutions for enterprises worldwide.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about">
+    <!-- Services Section -->
+    <section id="services" class="services">
         <div class="container">
-            <h2>About Us</h2>
-            <p>At <strong>American Alliances Tech</strong>, we are dedicated to delivering world-class technology solutions tailored to meet the unique needs of our clients. With a team of experienced professionals, we provide innovative services that drive efficiency, growth, and success for businesses across various industries.</p>
-            <p>Our mission is to bridge the gap between technology and business by offering scalable, reliable, and secure solutions. Whether it's IT consulting, software development, or cloud services, we are committed to helping our clients achieve their goals.</p>
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable and secure cloud infrastructure tailored to your needs.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your assets with enterprise-grade security solutions.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Software Development</h3>
+                    <p>Custom software built for performance and scalability.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Clients Section -->
     <section id="clients" class="clients">
         <div class="container">
-            <h2>Our Clients</h2>
-            <p>We are proud to partner with some of the world's leading organizations, including:</p>
-            <ul>
-                <li>T-Mobile</li>
-                <li>Walmart</li>
-            </ul>
+            <h2>Trusted By Industry Leaders</h2>
+            <div class="client-logos">
+                <img src="images/t-mobile-logo.png" alt="T-Mobile">
+                <img src="images/walmart-logo.png" alt="Walmart">
+            </div>
         </div>
     </section>
 
-    <!-- Contact Us Section -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>We’d love to hear from you! Reach out to us for inquiries, partnerships, or career opportunities.</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:hr@americanaliancetech.com">hr@americanaliancetech.com</a></li>
-                <li><strong>Phone:</strong> +1 425 215 6502</li>
-            </ul>
+            <h2>Let's Connect</h2>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> info@americanaliancetech.com</p>
+                    <p><i class="fas fa-phone"></i> +1(425)-215-6502</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2023 American Alliances Tech. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

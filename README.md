@@ -1,4 +1,4 @@
-# Welcome to American Alliances Tech 👋
+# American Alliances Tech
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/rvnthvrm/americanalliancestech)
